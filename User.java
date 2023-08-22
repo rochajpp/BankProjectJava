@@ -7,7 +7,6 @@ public class User {
     private String cpf;
     private int age;
     private List<Account> accounts = new ArrayList<>();
-    private List<Bank> banks = new ArrayList<>();
 
 
     public User(String name, String cpf, int age){
@@ -49,9 +48,5 @@ public class User {
         return this.accounts;
     }
 
-
-    public List<Bank> getBanks(){
-        return this.banks;
-    }
     
 }
