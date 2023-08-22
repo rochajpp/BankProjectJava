@@ -67,13 +67,21 @@ public class Application{
                     }
                     
                     try{
-                        Integer.parseInt(cpfUser);
+                        Long.parseLong(cpfUser);
+                        cpfUser.toString();
+                        break;
                         
                     } catch(Exception e){
-                        JOptionPane.showMessageDialog(null, "CPF inválido");
+                        JOptionPane.showMessageDialog(null, e);
                         continue;
                     }
-                    
+                }
+
+                while(true){
+                    if(ageUser == null){
+                        break;
+                    }
+                    ageUser = JOptionPane.showInputDialog(null, "Insira sua idade:");
                 }
             } else{
                 break;
