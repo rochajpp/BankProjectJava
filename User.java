@@ -48,5 +48,10 @@ public class User {
         return this.accounts;
     }
 
+    @Override
+    public String toString() {
+        return "User [name=" + name + ", cpf=" + cpf + ", age=" + age + ", accounts=" + accounts + "]";
+    }
+
     
 }
