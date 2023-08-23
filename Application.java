@@ -135,8 +135,7 @@ public class Application{
         for(int i = 0; i < bd.users.size(); i++){
             System.out.println(bd.users.toString());
         }
-        
-        
+           
     }
 
 }
