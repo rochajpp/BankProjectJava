@@ -17,7 +17,7 @@ public class DataBase {
         boolean existingCpf = false;
         
         for(int i = 0; i < users.size(); i++){
-            if(users.get(i).getCpf() == cpf){
+            if(users.get(i).getCpf().equals(cpf)){
                 existingCpf = true;
                 break;
             }
