@@ -16,6 +16,18 @@ public class Application{
         return true;
     }
 
+    public static boolean validateCredential(String name, String cpf){
+        for(int i = 0; i < bd.users.size(); i++){
+            if(bd.users.get(i).getName().equals(name)){
+                if(bd.users.get(i).getCpf() == cpf){
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
     public static void start(){
         while(true){
             Object[] options = {"Entrar", "Registrar"};
@@ -33,8 +45,6 @@ public class Application{
             //Registrar = 1;
 
             if(enterOrRegister == 0 ){
-                System.out.println("Entrar");
-
 
             } else if(enterOrRegister == 1){
                 String nameUser;
